@@ -19,18 +19,10 @@ Let’s get started!
     1.  Create a folder `themes` in your `config` folder
     2.  Add this under the section `frontend` in your `configuration.yaml`:
 
-        <div class="code-toolbar">
-
-            frontend:
-              themes: !include_dir_merge_named themes
-
-        <div class="toolbar">
-
-        <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-        </div>
-
-        </div>
+```yaml
+frontend:
+  themes: !include_dir_merge_named themes
+```
 
     3.  Restart Home Assistant
     4.  From now on, you can install new themes, like this one, in your themes folder
@@ -45,8 +37,7 @@ Let’s get started!
     *   Move inside this folder and upload the two folders `minimalist-templates` and `themes` directly into your HA `config` folder  
         This should leave you with the following structure
 
-        <div class="code-toolbar">
-
+```yaml
             config
                 └── other folders from Home Assistant, eg. data
                 └── minimalist-templates
@@ -59,78 +50,40 @@ Let’s get started!
                       └── minimalist-mobile.yaml
                 └── configuration.yaml (from HA)
                 └── other files from Home Assistant, eg. home-assistant.log
-
-        <div class="toolbar">
-
-        <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-        </div>
-
-        </div>
+```
 
     *   If you want to use a language other than english, [see the paragraph at the end of this page](#installation-of-non-english-languages) for more information about non-english languages.
 5.  **Installing the lovelace-custom-cards**  
     Some of our cards need lovelace-custom-cards to work correctly. To install these, we highly recommend to use HACS, as it is the easiest and safest way to install and maintain (update) these cards. Here is a list of the required cards:
 
-    <div class="table-wrapper">
-
     <table>
-
     <tbody>
-
     <tr>
-
     <th>Card</th>
-
     <th>Required by</th>
-
     </tr>
-
     <tr>
-
     <td>[button-card](https://github.com/custom-cards/button-card)</td>
-
     <td>all cards</td>
-
     </tr>
-
     <tr>
-
     <td>[lovelace-card-mod](https://github.com/thomasloven/lovelace-card-mod)</td>
-
     <td>card_light_slider</td>
-
     </tr>
-
     <tr>
-
     <td>[mini-graph-card](https://github.com/kalkih/mini-graph-card)</td>
-
     <td>card_graph</td>
-
     </tr>
-
     <tr>
-
     <td>[mini-media-player](https://github.com/kalkih/mini-media-player)</td>
-
     <td>card_media_player</td>
-
     </tr>
-
     <tr>
-
     <td>[my-cards (formerly known as ha-slider-card)](https://github.com/AnthonMS/my-cards)</td>
-
     <td>card_light_slider</td>
-
     </tr>
-
     </tbody>
-
     </table>
-
-    </div>
 
     If you don’t want to use HACS to install these cards, please refer to the installation instructions of the specific card!
 
@@ -145,8 +98,7 @@ Let’s get started!
         If you find the string “lovelace”, compare your entries in `configuration.yaml` under it (all the entries that are indented) with the code underneath.  
         If you can’t find it, add the code underneath to your `configuration.yaml` and change it to your needs.
 
-        <div class="code-toolbar">
-
+```yaml
             lovelace:
               mode: storage
               # Add yaml dashboards
@@ -157,90 +109,44 @@ Let’s get started!
                   icon: mdi:script
                   show_in_sidebar: true
                   filename: lovelace-minimalist.yaml
-
-        <div class="toolbar">
-
-        <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-        </div>
-
-        </div>
-
-        <div class="table-wrapper">
+```
 
         <table>
-
         <tbody>
-
         <tr>
-
         <td>_mode_ (`storage` or `yaml`)</td>
-
         <td>Set the mode to `storage`, than all your UI-configured dashboards will stay configurable that way, only the dashboards you list underneath will use `YAML mode`.</td>
-
         </tr>
-
         <tr>
-
         <td>_dashboards_</td>
-
         <td>This is the starting point for all your new dashboards, that will be using `YAML mode`.</td>
-
         </tr>
-
         <tr>
-
         <td>_lovelace-minimalist_</td>
-
         <td>This is the name and part of the url (path) for your new dashboard. You can choose any name you want, but it **must** contain a hyphen!</td>
-
         </tr>
-
         <tr>
-
         <td>_mode_</td>
-
         <td>Same as the mode above, but here you **must** use `yaml`.</td>
-
         </tr>
-
         <tr>
-
         <td>_title_</td>
-
         <td>This is the title of your dashboard (the title shown in the sidebar)</td>
-
         </tr>
-
         <tr>
-
         <td>_icon_</td>
-
         <td>Choose an icon for the sidebar</td>
-
         </tr>
-
         <tr>
-
         <td>_show_in_sidebar_</td>
-
         <td>If this dashboard should show up in your sidebar. It will still be available through the path you set above.</td>
-
         </tr>
-
         <tr>
-
         <td>_filename_</td>
-
         <td>This is the filename for your `view`(s). I normally use the same name for the file and the dashboard name.</td>
-
         </tr>
-
         </tbody>
-
         </table>
-
-        </div>
 
     *   Now that we have setup our new dashboard, we fill it with views.
         *   Create a file called `lovelace-minimalist.yaml` (or if you have choosen another name under “filename”, use that one) in your HA `config` folder, the one that `configuration.yaml`resides in.

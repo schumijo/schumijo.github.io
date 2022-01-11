@@ -13,71 +13,37 @@ Depending on your Home Assistant setup, there are different ways to setup this t
 
 These are the differences between the two methods:
 
-<div class="table-wrapper">
-
 <table>
-
 <thead>
-
 <tr>
-
 <th> </th>
-
 <th>YAML-mode</th>
-
 <th>UI-mode</th>
-
 </tr>
-
 </thead>
-
 <tbody>
-
 <tr>
-
 <td>Easy updating the “theme”</td>
-
 <td>✔️ copy & paste files</td>
-
 <td>❌ copy contents of files and put it together in one file</td>
-
 </tr>
-
 <tr>
-
 <td>Use `custom-cards` and language variables</td>
-
 <td>✔️ copy & paste files</td>
-
 <td>❌ copy contents of files and put it together in one file</td>
-
 </tr>
-
 <tr>
-
 <td>No `yaml` knowledge necessary</td>
-
 <td>❌</td>
-
 <td>❌</td>
-
 </tr>
-
 <tr>
-
 <td>Use of CodeGenerator</td>
-
 <td>✔️</td>
-
 <td>✔️</td>
-
 </tr>
-
 </tbody>
-
 </table>
-
-</div>
 
 **_We recommend installation in `yaml`-mode!_**
 
