@@ -2,6 +2,7 @@
 title: Development
 has_children: true
 nav_order: 3
+permalink: /docs/development
 ---
 # [](#development)Development
 
