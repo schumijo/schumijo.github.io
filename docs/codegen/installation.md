@@ -13,12 +13,12 @@ It bundles all necessary template data, language variables and custom-cards into
 <details><summary>Show instructions</summary>
 
 1.  Select the language you want to use
-2.  Select the custom-cards you want to install
-3.  Select example data, if you want to have some example code added
-4.  Click "Generate template code"
-5.  The code will be generated and shows up in the textarea underneath the generate button
-6.  Copy this code and paste it in your raw-config-editor
-7.  See [these instructions](/installation/ui-mode), if you don't know where to paste this.
+1.  Select the custom-cards you want to install
+1.  Select example data, if you want to have some example code added
+1.  Click "Generate template code"
+1.  The code will be generated and shows up in the textarea underneath the generate button
+1.  Copy this code and paste it in your raw-config-editor
+1.  See [these instructions](/installation/ui-mode), if you don't know where to paste this.
 
 </details>
 
