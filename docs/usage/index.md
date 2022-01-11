@@ -2,7 +2,6 @@
 title: Usage
 has_children: true
 nav_order: 2
-permalink: /docs/usage
 ---
 # [](#usage)Usage
 
