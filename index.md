@@ -6,7 +6,11 @@ nav_exclude: true
 
 This wiki is intended to help you install and use the wonderful “theme” _UI-Lovelace-Minimalist_ created by tben. Feel free to look around and get a deeper insight into the internal functions and tricks, this “theme” is using. Use them to your own likings, and if you develop something, that others must see, feel free to post it to this wiki or in the thread at the Home Assistant forum, which you can find [here](https://community.home-assistant.io/t/lovelace-ui-minimalist/322687?u=paddy0174).
 
-[![](/assets/images/example_home.png)](/assets/images/example_home.png) [![](/assets/images/example_temperature.png)](/assets/images/example_temperature.png) [![](/assets/images/example_consumption.png)](/assets/images/example_consumption.png) [![](/assets/images/example_localisation.png)](/assets/images/example_localisation.png)
+
+<img src="./assets/images/example_home.png" width="150">
+<img src="./assets/images/example_temperature.png" width="150">
+<img src="./assets/images/example_consumption.png" width="150">
+<img src="./assets/images/example_localisation.png" width="150">
 
 ### [](#what-is-ui-lovelace-minimalist)What is “UI-Lovelace-Minimalist”
 
