@@ -12,17 +12,21 @@ This “theme” needs a little work and configuration before you can first use 
 Let’s get started!
 
 1.  **What you should have before you start installing this “theme”**
+
     *   You should have a HomeAssistant (HA) instance running, preferrably with [HACS](https://hacs.xyz) installed and you should know the basics in using HA, eg. how to change settings in your `lovelace` configuration.
     *   You have access to your `config` folder of HA. Doesn’t matter which way this is, but you need to be able to upload and change files in your config. If you’re running `HA-OS` or a `supervised install` of HA, we highly recommend the [Samba AddOn](https://www.home-assistant.io/common-tasks/supervised/#installing-and-using-the-samba-add-on) (see the AddOn page for instructions) and for editing the [File editor AddOn](https://github.com/home-assistant/addons/tree/master/configurator) or a good editor like [Notepad++](https://notepad-plus-plus.org/) or [SublimeText](https://www.sublimetext.com/) for your OS.
+
 2.  **Prepare your HomeAssistant installation**  
+
     To install this “theme” together with other themes in HA, you need to setup your `configuration.yaml` to use a themes folder.
+
     1.  Create a folder `themes` in your `config` folder
     2.  Add this under the section `frontend` in your `configuration.yaml`:
 
-```yaml
-frontend:
-  themes: !include_dir_merge_named themes
-```
+    ```yaml
+    frontend:
+      themes: !include_dir_merge_named themes
+    ```
 
     3.  Restart Home Assistant
     4.  From now on, you can install new themes, like this one, in your themes folder
@@ -37,20 +41,20 @@ frontend:
     *   Move inside this folder and upload the two folders `minimalist-templates` and `themes` directly into your HA `config` folder  
         This should leave you with the following structure
 
-```yaml
-            config
-                └── other folders from Home Assistant, eg. data
-                └── minimalist-templates
-                   └── button_card_templates.yaml
-                   └── EN.yaml
-                └── themes
-                   └── minimalist-desktop
-                      └── minimalist-desktop.yaml
-                   └── minimalist-mobile
-                      └── minimalist-mobile.yaml
-                └── configuration.yaml (from HA)
-                └── other files from Home Assistant, eg. home-assistant.log
-```
+    ```yaml
+                config
+                    └── other folders from Home Assistant, eg. data
+                    └── minimalist-templates
+                      └── button_card_templates.yaml
+                      └── EN.yaml
+                    └── themes
+                      └── minimalist-desktop
+                          └── minimalist-desktop.yaml
+                      └── minimalist-mobile
+                          └── minimalist-mobile.yaml
+                    └── configuration.yaml (from HA)
+                    └── other files from Home Assistant, eg. home-assistant.log
+    ```
 
     *   If you want to use a language other than english, [see the paragraph at the end of this page](#installation-of-non-english-languages) for more information about non-english languages.
 5.  **Installing the lovelace-custom-cards**  
@@ -98,62 +102,61 @@ frontend:
         If you find the string “lovelace”, compare your entries in `configuration.yaml` under it (all the entries that are indented) with the code underneath.  
         If you can’t find it, add the code underneath to your `configuration.yaml` and change it to your needs.
 
-```yaml
-            lovelace:
-              mode: storage
-              # Add yaml dashboards
-              dashboards:
-                lovelace-minimalist:
-                  mode: yaml
-                  title: Minimalist
-                  icon: mdi:script
-                  show_in_sidebar: true
-                  filename: lovelace-minimalist.yaml
-```
+    ```yaml
+                lovelace:
+                  mode: storage
+                  # Add yaml dashboards
+                  dashboards:
+                    lovelace-minimalist:
+                      mode: yaml
+                      title: Minimalist
+                      icon: mdi:script
+                      show_in_sidebar: true
+                      filename: lovelace-minimalist.yaml
+    ```
 
-        <table>
-        <tbody>
-        <tr>
-        <td>_mode_ (`storage` or `yaml`)</td>
-        <td>Set the mode to `storage`, than all your UI-configured dashboards will stay configurable that way, only the dashboards you list underneath will use `YAML mode`.</td>
-        </tr>
-        <tr>
-        <td>_dashboards_</td>
-        <td>This is the starting point for all your new dashboards, that will be using `YAML mode`.</td>
-        </tr>
-        <tr>
-        <td>_lovelace-minimalist_</td>
-        <td>This is the name and part of the url (path) for your new dashboard. You can choose any name you want, but it **must** contain a hyphen!</td>
-        </tr>
-        <tr>
-        <td>_mode_</td>
-        <td>Same as the mode above, but here you **must** use `yaml`.</td>
-        </tr>
-        <tr>
-        <td>_title_</td>
-        <td>This is the title of your dashboard (the title shown in the sidebar)</td>
-        </tr>
-        <tr>
-        <td>_icon_</td>
-        <td>Choose an icon for the sidebar</td>
-        </tr>
-        <tr>
-        <td>_show_in_sidebar_</td>
-        <td>If this dashboard should show up in your sidebar. It will still be available through the path you set above.</td>
-        </tr>
-        <tr>
-        <td>_filename_</td>
-        <td>This is the filename for your `view`(s). I normally use the same name for the file and the dashboard name.</td>
-        </tr>
-        </tbody>
-        </table>
+      <table>
+      <tbody>
+      <tr>
+      <td>mode (`storage` or `yaml`)</td>
+      <td>Set the mode to `storage`, than all your UI-configured dashboards will stay configurable that way, only the dashboards you list underneath will use `YAML mode`.</td>
+      </tr>
+      <tr>
+      <td>dashboards</td>
+      <td>This is the starting point for all your new dashboards, that will be using `YAML mode`.</td>
+      </tr>
+      <tr>
+      <td>lovelace-minimalist</td>
+      <td>This is the name and part of the url (path) for your new dashboard. You can choose any name you want, but it **must** contain a hyphen!</td>
+      </tr>
+      <tr>
+      <td>mode</td>
+      <td>Same as the mode above, but here you **must** use `yaml`.</td>
+      </tr>
+      <tr>
+      <td>title</td>
+      <td>This is the title of your dashboard (the title shown in the sidebar)</td>
+      </tr>
+      <tr>
+      <td>icon</td>
+      <td>Choose an icon for the sidebar</td>
+      </tr>
+      <tr>
+      <td>show_in_sidebar</td>
+      <td>If this dashboard should show up in your sidebar. It will still be available through the path you set above.</td>
+      </tr>
+      <tr>
+      <td>filename</td>
+      <td>This is the filename for your `view`(s). I normally use the same name for the file and the dashboard name.</td>
+      </tr>
+      </tbody>
+      </table>
 
     *   Now that we have setup our new dashboard, we fill it with views.
         *   Create a file called `lovelace-minimalist.yaml` (or if you have choosen another name under “filename”, use that one) in your HA `config` folder, the one that `configuration.yaml`resides in.
         *   Open the file and add the following to it:
 
-            <div class="code-toolbar">
-
+              ```yaml
                 button_card_templates: !include_dir_merge_named minimalist-templates/
                 views:
                   - title: Minimalist
@@ -178,14 +181,7 @@ frontend:
                             name: UI-Lovelace-Minimalist second page
                           - type: custom:button-card
                             template: edge
-
-            <div class="toolbar">
-
-            <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-            </div>
-
-            </div>
+              ```
 
         *   Save the file
 7.  **Apply the theme**
@@ -214,19 +210,11 @@ Use this feature:
 
 In the end, it should look like this:
 
-<div class="code-toolbar">
-
+```yaml
       └── minimalist-templates/
          └── button_card_templates.yaml
          └── EN.yaml # or DE.yaml, FR.yaml, IT.yaml
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 If you’re using `custom-cards`, follow the instructions in the readme file from the `custom-card`.
 
