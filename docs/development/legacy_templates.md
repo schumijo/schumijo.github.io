@@ -37,7 +37,7 @@ This “theme” was re-written prior to the release of version 1.0.0 and differ
 
 <td style="vertical-align: top;">chip_icon_state</td>
 
-<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_chip_icon_state_icon  
+<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_chip_icon_state_icon<br>
 <span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_chip_icon_state_entity</td>
 
 </tr>
@@ -62,7 +62,7 @@ This “theme” was re-written prior to the release of version 1.0.0 and differ
 
 <td style="vertical-align: top;">chip_presence_detection</td>
 
-<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_chip_presence_counter_residents  
+<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_chip_presence_counter_residents<br>  
 <span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_chip_presence_counter_guests</td>
 
 </tr>
@@ -135,7 +135,7 @@ This “theme” was re-written prior to the release of version 1.0.0 and differ
 
 <td style="vertical-align: top;">card_power_outlet</td>
 
-<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_power_outlet_consumption_sensor  
+<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_power_outlet_consumption_sensor<br>  
 <span style="height: 10px; width: 10px; background-color: #2C84FA; border-radius: 50%; display: inline-block;"></span> name</td>
 
 </tr>
@@ -148,7 +148,7 @@ This “theme” was re-written prior to the release of version 1.0.0 and differ
 
 <td style="vertical-align: top;">card_cover_with_buttons</td>
 
-<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_cover_with_buttons_name  
+<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_cover_with_buttons_name<br>  
 <span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_cover_with_buttons_entity</td>
 
 </tr>
@@ -161,8 +161,8 @@ This “theme” was re-written prior to the release of version 1.0.0 and differ
 
 <td style="vertical-align: top;">card_graph</td>
 
-<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_graph_color  
-<span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_graph_name  
+<td style="vertical-align: top;"><span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_graph_color<br>  
+<span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_graph_name<br>  
 <span style="height: 10px; width: 10px; background-color: #FF9101; border-radius: 50%; display: inline-block;"></span> ulm_card_graph_entity</td>
 
 </tr>

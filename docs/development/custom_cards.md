@@ -37,8 +37,7 @@ This should look like this:
 
 In the end, your `custom-card` folder should have at least these structure:
 
-<div class="code-toolbar">
-
+```yaml
     config/minimalist-templates
     └── custom_card_paddy_temperature
        └── custom_card_paddy_temperature.yaml
@@ -46,14 +45,7 @@ In the end, your `custom-card` folder should have at least these structure:
        └── languages
           └── DE.yaml (optional)
           └── EN.yaml (if language variables are used, at least EN needs to be provided)
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 > **Note:** _This is **optional** and you can use whatever naming you want, but keep in mind, the use of **custom_** as a prefix **is required**!_
 
@@ -61,8 +53,7 @@ In the end, your `custom-card` folder should have at least these structure:
 
 To make reading the definitions easier, we use the following structure in our defintions in _button_card_templates.yaml_:
 
-<div class="code-toolbar">
-
+```yaml
     name:
       template:
       variables:
@@ -90,14 +81,7 @@ To make reading the definitions easier, we use the following structure in our de
           card:
             type:
             template:
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 Feel free to delete defintions, that you don’t use or need.
 
@@ -121,8 +105,7 @@ These `variables` are already provided by the “theme”:
 The usage is easy:  
 Include the language variables by including the `template` _ulm_language_variables_ in your card and then use them just like every other variable.
 
-<div class="code-toolbar">
-
+```yaml
     template:
       - ulm_language_variables
       # optional, only if language variables are used
@@ -138,31 +121,16 @@ Include the language variables by including the `template` _ulm_language_variabl
           return variables.ulm_on;
         }
       ]]]
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 Your language file should use this format:
 
-<div class="code-toolbar">
-
+```yaml
     # EN.yaml for custom_card_paddy0174_temperature
      custom_card_paddy0174_temperature_language_variables:
        variables:
          custom_card_paddy0174_temperature_cool: 'Cool'
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 Provide at least a file `EN.yaml` in your `custom-card`s language folder. If you want to support more languages, name them accordingly and use the same structure as in the `EN.yaml` file. In the end you will have different files in your languages folder, like `EN.yaml`, `FR.yaml` and `DE.yaml`. Please advise the user in your readme to delete all but one of these language files, otherwise the loading order gets messed up and the wrong strings get loaded.
 

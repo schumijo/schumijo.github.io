@@ -11,10 +11,9 @@ This is a list of all our templates. This is the template code, that is used, wh
 
 > **Hint:** _If you want to copy all templates at once, eg. for installation purposes, use the file `button_card_templates.yaml` that you can find in the repository under `config` > `minimalist-templates` or click [here](https://github.com/UI-Lovelace-Minimalist/UI/blob/main/config/minimalist-templates/button_card_templates.yaml)._
 
-<details><summary>Template name: _card_battery_</summary>
+<details><summary>Template name: card_battery</summary>
 
-<div class="code-toolbar">
-
+```yaml
     card_battery:
       template:
         - icon_info_bg
@@ -88,18 +87,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - grid-template-columns: min-content auto
           - grid-template-rows: min-content min-content
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_binary_sensor</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_binary_sensor_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_binary_sensor:
       template: 
         - icon_info_bg
@@ -107,36 +99,22 @@ This is a list of all our templates. This is the template code, that is used, wh
       name: "[[[ return entity.attributes.friendly_name != '' ? entity.attributes.friendly_name : entity.entity_id ]]]"
       show_last_changed: true
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_binary_sensor_alert</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_binary_sensor_alert_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_binary_sensor_alert:
       template: 
         - icon_info_alert
       name: "[[[ return entity.attributes.friendly_name != '' ? entity.attributes.friendly_name : entity.entity_id ]]]"
       show_last_changed: true
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_cover_with_buttons</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_cover_with_buttons_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_cover_with_buttons:
       variables:
         ulm_card_cover_with_buttons_name: "n/a"
@@ -200,18 +178,11 @@ This is a list of all our templates. This is the template code, that is used, wh
                       entity_id: '[[[ return variables.ulm_card_cover_with_buttons_entity ]]]'
                   icon: 'mdi:arrow-up'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_generic</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_generic_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_generic:
       template: 
         - icon_info_bg
@@ -257,18 +228,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - grid-template-columns: min-content auto
           - grid-template-rows: min-content min-content
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_generic_swap</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_generic_swap_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_generic_swap:
       template: 
         - icon_info_bg
@@ -314,18 +278,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - grid-template-columns: min-content auto
           - grid-template-rows: min-content min-content
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_graph</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_graph_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_graph:
       variables:
         ulm_card_graph_color: "var(--info-color)"
@@ -372,18 +329,11 @@ This is a list of all our templates. This is the template code, that is used, wh
                 border-radius: var(--border-radius);
               }
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_input_boolean</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_input_boolean_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_input_boolean:
       template: 
         - icon_info_bg
@@ -403,18 +353,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           }
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_light</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_light_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_light:
       template: 
         - icon_info_bg
@@ -442,18 +385,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           }
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_light_slider</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_light_slider_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_light_slider:
       template: 
         - ulm_language_variables
@@ -529,18 +465,11 @@ This is a list of all our templates. This is the template code, that is used, wh
                 box-shadow: none;
               }
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_light_slider_collapse</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_light_slider_collapse_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_light_slider_collapse:
       template: 
         - ulm_language_variables
@@ -622,18 +551,11 @@ This is a list of all our templates. This is the template code, that is used, wh
                   box-shadow: none;
                 }
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_light_slider_horizontal</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_light_slider_horizontal_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_light_slider_horizontal:
       template: 
         - ulm_language_variables
@@ -708,18 +630,11 @@ This is a list of all our templates. This is the template code, that is used, wh
                 box-shadow: none;
               }
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_media_player</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_media_player_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_media_player:
       template:
         - icon_info_bg
@@ -766,18 +681,11 @@ This is a list of all our templates. This is the template code, that is used, wh
               return label;
           ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_media_player_with_control</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_media_player_with_control_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_media_player_with_control:
       template:
         - icon_info_bg
@@ -844,18 +752,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - background-blend-mode: multiply
           - background: "[[[ return states[entity.entity_id].attributes.entity_picture != null ? 'center / cover url(' + states[entity.entity_id].attributes.entity_picture + ') rgba(0, 0, 0, 0.15)' : '' ]]]"
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_media_player_with_controls</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_media_player_with_controls_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_media_player_with_controls:
       variables:
         ulm_card_media_player_with_controls_name: "No name set"
@@ -928,18 +829,11 @@ This is a list of all our templates. This is the template code, that is used, wh
                       entity_id: '[[[ return entity.ulm_card_media_player_with_controls_entity ]]]'
                   icon: 'mdi:skip-next'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_navigate</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_navigate_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_navigate:
       template: 
         - icon_only
@@ -966,18 +860,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - grid-template-columns: min-content min-content
           - grid-template-rows: min-content
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_person</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_person_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_person:
       template: icon_info_bg
       variables:
@@ -1051,18 +938,11 @@ This is a list of all our templates. This is the template code, that is used, wh
             }
           ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_power_outlet</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_power_outlet_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_power_outlet:
       template:
         - icon_info_bg
@@ -1085,18 +965,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           }
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_script</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_script_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_script:
       template: 
         - icon_only
@@ -1119,18 +992,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - grid-template-columns: min-content min-content
           - grid-template-rows: min-content
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: card_title</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _card_title_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     card_title:
       tap_action:
         action: none
@@ -1160,18 +1026,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           - font-size: '1rem'
           - opacity: '0.4'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_back</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_back_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_back:
       template: chips
       tap_action:
@@ -1183,18 +1042,11 @@ This is a list of all our templates. This is the template code, that is used, wh
         grid:
           - grid-template-areas: '"i"'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_icon_double_state</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_icon_double_state_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_icon_double_state:
       template: chips
       triggers_update:
@@ -1217,18 +1069,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           return icon + ' ' + state1 + ' • ' + state2;
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_icon_only</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_icon_only_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_icon_only:
       template: chips
       label: |
@@ -1240,18 +1085,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           return icon;
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_icon_state</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_icon_state_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_icon_state:
       template: chips
       triggers_update:
@@ -1269,18 +1107,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           return icon + ' ' + state;
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_power_consumption</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_power_consumption_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_power_consumption:
       template:
         - chips
@@ -1298,18 +1129,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           }
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_presence_detection</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_presence_detection_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_presence_detection:
       template: chips
       triggers_update:
@@ -1321,18 +1145,11 @@ This is a list of all our templates. This is the template code, that is used, wh
           return '🏠 ' +  states[variables.ulm_chip_presence_counter_residents].state + guests;
         ]]]
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chip_temperature</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chip_temperature_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chip_temperature:
       template: chips
       triggers_update: 
@@ -1374,13 +1191,7 @@ This is a list of all our templates. This is the template code, that is used, wh
           return icon + ' ' + states[variables.ulm_chip_temperature_outside].state + '° / ' + states[variables.ulm_chip_temperature_inside].state + '°' ;
         ]]]
 
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 </details>
 
@@ -1390,10 +1201,9 @@ This “theme” is working with a lot of internal templates (in `button_card_te
 
 > **Note:** _You will need these templates for installation and development, normally you **won’t need them** in your views directly_!
 
-<details><summary>Template name: _blue_</summary>
+<details><summary>Template name: blue</summary>
 
-<div class="code-toolbar">
-
+```yaml
     blue:
       state:
         - styles:
@@ -1409,18 +1219,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
               - background-color: 'rgba(var(--color-background-blue), var(--opacity-bg))'
           value: 'on'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: blue_no_state</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _blue_no_state_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     blue_no_state:
       styles:
         icon:
@@ -1434,18 +1237,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
         card:
           - background-color: 'rgba(var(--color-background-blue), var(--opacity-bg))'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: chips</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _chips_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     chips:
       tap_action:
         action: more-info
@@ -1472,18 +1268,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           - padding-right: 6px
       size: 80%
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: cover</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _cover_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     cover:
       tap_action:
         action: more-info
@@ -1529,35 +1318,21 @@ This “theme” is working with a lot of internal templates (in `button_card_te
             img_cell:
               - background-color: "rgba(var(--color-blue),0.2)"
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: edge</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _edge_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     edge:
       styles:
         card:
           - width: 0px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: icon</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _icon_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     icon:
       color: var(--google-grey)
       show_icon: true
@@ -1607,18 +1382,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           ]]]
       size: 20px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: icon_info_alert</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _icon_info_alert_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     icon_info_alert:
       color: var(--google-grey)
       show_icon: true
@@ -1699,18 +1467,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           ]]]
       size: 20px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: icon_info_bg</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _icon_info_bg_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     icon_info_bg:
       color: var(--google-grey)
       show_icon: true
@@ -1780,18 +1541,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           ]]]
       size: 20px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: icon_info_line</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _icon_info_line_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     icon_info_line:
       show_icon: true
       show_label: true
@@ -1820,18 +1574,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           - padding: 0px
       size: 100%
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: icon_only</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _icon_only_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     icon_only:
       color: var(--google-grey)
       show_icon: true
@@ -1863,18 +1610,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           - padding: 12px
       size: 20px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: list_items</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _list_items_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     list_items:
       styles:
         grid:
@@ -1886,18 +1626,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           - box-shadow: none
           - padding: 0px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: list_items_line</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _list_items_line_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     list_items_line:
       styles:
         grid:
@@ -1909,18 +1642,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
           - box-shadow: none
           - padding: 0px
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: widget_icon</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _widget_icon_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     widget_icon:
       tap_action:
         action: toggle
@@ -1941,18 +1667,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
       size: 20px
       color: var(--google-grey)
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: yellow</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _yellow_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     yellow:
       state:
         - styles:
@@ -1968,18 +1687,11 @@ This “theme” is working with a lot of internal templates (in `button_card_te
               - background-color: 'rgba(var(--color-background-yellow),var(--opacity-bg))'
           value: 'on'
 
-<div class="toolbar">
+```
 
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+</details><details><summary>Template name: yellow_slider</summary>
 
-</div>
-
-</div>
-
-</details><details><summary>Template name: _yellow_slider_</summary>
-
-<div class="code-toolbar">
-
+```yaml
     yellow_slider:
       state:
         - styles:
@@ -1995,12 +1707,6 @@ This “theme” is working with a lot of internal templates (in `button_card_te
               - background-color: 'rgba(0,0,0,0)'
           value: 'on'
 
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 </details>

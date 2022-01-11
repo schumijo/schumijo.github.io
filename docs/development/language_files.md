@@ -13,8 +13,7 @@ We try our best to offer translations, but here we rely on you as a user or deve
 
 *   Copy the content of the code window underneath and paste it in a new file in your editor on your computer or in the file editor in Home Assistant
 
-    <div class="code-toolbar">
-
+```yaml
         ulm_language_variables:
           variables:
             ulm_on: "" # language string for 'on'
@@ -25,14 +24,7 @@ We try our best to offer translations, but here we rely on you as a user or deve
             ulm_standby: "" # language string for 'standby'
             ulm_idle: "" # language string for 'idle'
             ulm_currency: "" # language string for 'currency' (symbol like € or $)
-
-    <div class="toolbar">
-
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-    </div>
-
-    </div>
+```
 
 *   Change the translation strings to your own language. Write the string between the “” (quotation marks)
 *   Save the file in the folder `config` > `minimalist-templates` with the short code for your language and _.yaml_ as file extension, eg. `DE.yaml` for german or `FR.yaml` for french
@@ -44,8 +36,7 @@ We try our best to offer translations, but here we rely on you as a user or deve
 
 *   Copy the content of the code window underneath and paste it in a new file in your editor on your computer or in the file editor in Home Assistant
 
-    <div class="code-toolbar">
-
+```yaml
           ulm_language_variables:
             variables:
               ulm_on: "" # language string for 'on'
@@ -56,14 +47,7 @@ We try our best to offer translations, but here we rely on you as a user or deve
               ulm_standby: "" # language string for 'standby'
               ulm_idle: "" # language string for 'idle'
               ulm_currency: "" # language string for 'currency' (symbol like € or $)
-
-    <div class="toolbar">
-
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-    </div>
-
-    </div>
+```
 
 *   Change the translation strings to your own language. Write the string between the “” (quotation marks)
 *   Copy the changed code from the editor
