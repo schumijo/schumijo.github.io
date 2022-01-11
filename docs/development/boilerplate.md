@@ -20,8 +20,8 @@ This is the boilerplate template for a `custom-card`s readme file.
 
 <details><summary>Show the readme template</summary>
 
-<div class="code-toolbar">
 
+```yaml
     # Custom-card ""
     ...
 
@@ -90,14 +90,7 @@ This is the boilerplate template for a `custom-card`s readme file.
 
     ## Notes
     ...
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 </details>
 
@@ -111,8 +104,7 @@ To take advantage of the great functions `Jekyll` provides us with, there are th
 
 <details><summary>Show "collection_template"</summary>
 
-<div class="code-toolbar">
-
+```yaml
     ---
     title: 
     name: 
@@ -165,14 +157,7 @@ To take advantage of the great functions `Jekyll` provides us with, there are th
         ui: 
         code: 
     ---
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 </details>
 
@@ -180,17 +165,9 @@ To take advantage of the great functions `Jekyll` provides us with, there are th
 
 <details><summary>Show "collection_custom_card"</summary>
 
-<div class="code-toolbar">
-
+```yaml
     # not redy yet, sorry!
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 </details>
 
@@ -198,16 +175,8 @@ To take advantage of the great functions `Jekyll` provides us with, there are th
 
 <details><summary>Show "collection_example"</summary>
 
-<div class="code-toolbar">
-
+```yaml
     # not redy yet, sorry!
-
-<div class="toolbar">
-
-<div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-</div>
-
-</div>
+```
 
 </details>
