@@ -66,148 +66,95 @@ This guide is intended for people who already had installed this “theme” pri
 
 Let’s see if we can get this done, so let’s start!
 
-1.  **Remove the old installation** As there were a lot of different ways, that you could have installed this, you need to look for yourself, where the files and maybe inserts into Home Assistant-files are located. If you installed this “theme” according to the instructions, you need to delete these folders and their contents:
+1.  **Remove the old installation** 
+
+As there were a lot of different ways, that you could have installed this, you need to look for yourself, where the files and maybe inserts into Home Assistant-files are located. If you installed this “theme” according to the instructions, you need to delete these folders and their contents:
     *   `config` > `configuration`
     *   `config` > `lovelace`
 
-    A word about ressources. If you followed the original readme, you have gotten a few `lovelace-cards` (eg. button-card) in the folder `config` > `www` > `community`. These were linked through the file `ressources.yaml`. Unfortunately, this is not the best way to handle `lovelace-cards`. Our recommendation is to delete these folders and install the needed `lovelace-cards` via [HACS](https://hacs.xyz). Even if you don’t want to use HACS, we recommend to delete these folders and start with a fresh install of these cards, following their installation instructions.
+A word about ressources. If you followed the original readme, you have gotten a few `lovelace-cards` (eg. button-card) in the folder `config` > `www` > `community`. These were linked through the file `ressources.yaml`. Unfortunately, this is not the best way to handle `lovelace-cards`. Our recommendation is to delete these folders and install the needed `lovelace-cards` via [HACS](https://hacs.xyz). Even if you don’t want to use HACS, we recommend to delete these folders and start with a fresh install of these cards, following their installation instructions.
 
-    > **Note:** _If one of our cards needs a specific `lovelace-card` to work correctly, it is specifically noted!_
+> **Note:** _If one of our cards needs a specific `lovelace-card` to work correctly, it is specifically noted!_
 
-    Move into the folder `config` > `www` > `community` and delete these `lovelace-cards` (folders), you originally installed:
+Move into the folder `config` > `www` > `community` and delete these `lovelace-cards` (folders), you originally installed:
 
-    <div class="table-wrapper">
-
-    <table>
-
-    <thead>
-
-    <tr>
-
-    <th>Card</th>
-
-    <th>Folder</th>
-
-    </tr>
-
-    </thead>
-
-    <tbody>
-
-    <tr>
-
-    <td>button-card</td>
-
-    <td>`button-card`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>slider-card</td>
-
-    <td>`ha-slider-card`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>auto-entities</td>
-
-    <td>`lovelace-auto-entities`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>card-mod</td>
-
-    <td>`lovelace-card-mod`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>state-switch</td>
-
-    <td>`lovelace-state-switch`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>mini-graph</td>
-
-    <td>`mini-graph-card`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>mini-media-player</td>
-
-    <td>`mini-media-player`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>swipe</td>
-
-    <td>`swipe-card`</td>
-
-    </tr>
-
-    <tr>
-
-    <td>vertical-stack-in</td>
-
-    <td>`vertical-stack-in-card`</td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
-
-    </div>
+<table>
+<thead>
+<tr>
+<th>Card</th>
+<th>Folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>button-card</td>
+<td>`button-card`</td>
+</tr>
+<tr>
+<td>slider-card</td>
+<td>`ha-slider-card`</td>
+</tr>
+<tr>
+<td>auto-entities</td>
+<td>`lovelace-auto-entities`</td>
+</tr>
+<tr>
+<td>card-mod</td>
+<td>`lovelace-card-mod`</td>
+</tr>
+<tr>
+<td>state-switch</td>
+<td>`lovelace-state-switch`</td>
+</tr>
+<tr>
+<td>mini-graph</td>
+<td>`mini-graph-card`</td>
+</tr>
+<tr>
+<td>mini-media-player</td>
+<td>`mini-media-player`</td>
+</tr>
+<tr>
+<td>swipe</td>
+<td>`swipe-card`</td>
+</tr>
+<tr>
+<td>vertical-stack-in</td>
+<td>`vertical-stack-in-card`</td>
+</tr>
+</tbody>
+</table>
 
 2.  **Prepare your HomeAssistant installation**  
-    For the next steps you need a good file editor. We recommend one of these possibilities, the [File editor AddOn](https://github.com/home-assistant/addons/tree/master/configurator) or a good editor like [Notepad++](https://notepad-plus-plus.org/) or [SublimeText](https://www.sublimetext.com/) for your OS (computer).
 
-    To install this “theme” together with other themes in HA, you need to setup your `configuration.yaml` to use a themes folder.
+For the next steps you need a good file editor. We recommend one of these possibilities, the [File editor AddOn](https://github.com/home-assistant/addons/tree/master/configurator) or a good editor like [Notepad++](https://notepad-plus-plus.org/) or [SublimeText](https://www.sublimetext.com/) for your OS (computer).
 
-    1.  Create a folder `themes` in your `config` folder
-    2.  Add this under the section `frontend` in your `configuration.yaml`:
+To install this “theme” together with other themes in HA, you need to setup your `configuration.yaml` to use a themes folder.
 
-        <div class="code-toolbar">
+1.  Create a folder `themes` in your `config` folder
+2.  Add this under the section `frontend` in your `configuration.yaml`:
 
+```yaml
             frontend:
               themes: !include_dir_merge_named themes
+```
 
-        <div class="toolbar">
+3.  Restart Home Assistant
+4.  From now on, you can install new themes, like this one, in your themes folder
+5.  We apply this theme later on so just leave it like that for now.
 
-        <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-        </div>
-
-        </div>
-
-    3.  Restart Home Assistant
-    4.  From now on, you can install new themes, like this one, in your themes folder
-    5.  We apply this theme later on so just leave it like that for now.
-
-    > **Note:** _This is the official, recommended way to handle themes. With this structure you can install themes with HACS._
+> **Note:** _This is the official, recommended way to handle themes. With this structure you can install themes with HACS._
 
 3.  **Download the files**  
-    Go to our repository on Github and download the code by pressing the green “Code” button in the top right corner and choose “Download ZIP”. Save the file on your computer and unpack it.
+
+Go to our repository on Github and download the code by pressing the green “Code” button in the top right corner and choose “Download ZIP”. Save the file on your computer and unpack it.
 4.  **Upload to your HomeAssistant installation**
-    *   In the downloaded and unpacked file you find a folder `config`
-    *   Move inside this folder and upload the two folders `minimalist-templates` and `themes` directly into your HA `config` folder  
-        This should leave you with the following structure
 
-        <div class="code-toolbar">
+*   In the downloaded and unpacked file you find a folder `config`
+*   Move inside this folder and upload the two folders `minimalist-templates` and `themes` directly into your HA `config` folder  
+    This should leave you with the following structure
 
+```yaml
             config
               └── other folders from Home Assistant, eg. data
               └── minimalist-templates
@@ -220,206 +167,137 @@ Let’s see if we can get this done, so let’s start!
                     └── minimalist-mobile.yaml
               └── configuration.yaml (from HA)
               └── other files from Home Assistant, eg. home-assistant.log
+```
 
-        <div class="toolbar">
+*   If you want to use english as your language, go to the next step, if not, read on
+    *   Back in the main folder of your downloaded and unpacked file you find a folder `languages`.
+    *   Move into it and copy the file of the desired language, eg. `DE.yaml` or `FR.yaml`, into the folder `minimalist-templates` inside your HA `config` folder.
+    *   **_IMPORTANT!_** Delete the file `EN.yaml` inside `minimalist-templates` or you will get weird language strings!
 
-        <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-        </div>
-
-        </div>
-
-    *   If you want to use english as your language, go to the next step, if not, read on
-        *   Back in the main folder of your downloaded and unpacked file you find a folder `languages`.
-        *   Move into it and copy the file of the desired language, eg. `DE.yaml` or `FR.yaml`, into the folder `minimalist-templates` inside your HA `config` folder.
-        *   **_IMPORTANT!_** Delete the file `EN.yaml` inside `minimalist-templates` or you will get weird language strings!
-
-        [See this page for more details](/installation/yaml-mode#installation-of-non-english-languages) on how language files work in this “theme”.
+    [See this page for more details](/installation/yaml-mode#installation-of-non-english-languages) on how language files work in this “theme”.
 
 5.  **Installing the lovelace-cards**  
-    Some of our cards need lovelace-cards to work correctly. To install these, we highly recommend to use HACS, as it is the easiest and safest way to install and maintain (update) these cards. Here is a list of the required cards:
 
-    <div class="table-wrapper">
+Some of our cards need lovelace-cards to work correctly. To install these, we highly recommend to use HACS, as it is the easiest and safest way to install and maintain (update) these cards. Here is a list of the required cards:
 
-    <table>
+<table>
+<tbody>
+<tr>
+<th>Card</th>
+<th>Required by</th>
+</tr>
+<tr>
+<td>[button-card](https://github.com/custom-cards/button-card)</td>
+<td>all cards</td>
+</tr>
+<tr>
+<td>[lovelace-card-mod](https://github.com/thomasloven/lovelace-card-mod)</td>
+<td>card_light_slider</td>
+</tr>
+<tr>
+<td>[mini-graph-card](https://github.com/kalkih/mini-graph-card)</td>
+<td>card_graph</td>
+</tr>
+<tr>
+<td>[mini-media-player](https://github.com/kalkih/mini-media-player)</td>
+<td>card_media_player</td>
+</tr>
+<tr>
+<td>[my-cards (formerly known as ha-slider-card)](https://github.com/AnthonMS/my-cards)</td>
+<td>card_light_slider</td>
+</tr>
+</tbody>
+</table>
 
-    <tbody>
-
-    <tr>
-
-    <th>Card</th>
-
-    <th>Required by</th>
-
-    </tr>
-
-    <tr>
-
-    <td>[button-card](https://github.com/custom-cards/button-card)</td>
-
-    <td>all cards</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[lovelace-card-mod](https://github.com/thomasloven/lovelace-card-mod)</td>
-
-    <td>card_light_slider</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[mini-graph-card](https://github.com/kalkih/mini-graph-card)</td>
-
-    <td>card_graph</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[mini-media-player](https://github.com/kalkih/mini-media-player)</td>
-
-    <td>card_media_player</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[my-cards (formerly known as ha-slider-card)](https://github.com/AnthonMS/my-cards)</td>
-
-    <td>card_light_slider</td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
-
-    </div>
-
-    If you don’t want to use HACS to install these cards, please refer to the installation instructions of the specific card!
+If you don’t want to use HACS to install these cards, please refer to the installation instructions of the specific card!
 
 6.  **Changing your view file**  
-    We’re done with the file deletions, now comes the tricky part. We need to adapt the code in your view(s) to reflect the changes, that have been made to the “theme”. It doesn’t matter, if you choose the example views from the download or configured your own.
 
-    Now open your view file (eg. `ui-lovelace.yaml`) in an editor. Depending on the way you installed these, you should know where to find them. I can give one hint, if you worked according to the instructions from HA, it should be a file in your `config` folder (or a sub-folder), that has a hyphen in the filename (eg. `ui-lovelace.yaml`), as this is a requirement from HA.
+We’re done with the file deletions, now comes the tricky part. We need to adapt the code in your view(s) to reflect the changes, that have been made to the “theme”. It doesn’t matter, if you choose the example views from the download or configured your own.
 
-    Now some prerequisites to do before you start editing. Open [this page](/development/legacy_templates) to find a complete list of all previously used template names and their substitutions in the new naming scheme. Leave this open, you’ll need it.
+Now open your view file (eg. `ui-lovelace.yaml`) in an editor. Depending on the way you installed these, you should know where to find them. I can give one hint, if you worked according to the instructions from HA, it should be a file in your `config` folder (or a sub-folder), that has a hyphen in the filename (eg. `ui-lovelace.yaml`), as this is a requirement from HA.
 
-    Find this line
+Now some prerequisites to do before you start editing. Open [this page](/development/legacy_templates) to find a complete list of all previously used template names and their substitutions in the new naming scheme. Leave this open, you’ll need it.
 
-    <div class="code-toolbar">
+Find this line
 
+```yaml
         button_card_templates: !include lovelace/button_card_templates/button_card_templates.yaml
+```
 
-    <div class="toolbar">
+and change it to this
 
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-    </div>
-
-    </div>
-
-    and change it to this
-
-    <div class="code-toolbar">
-
+```yaml
         button_card_templates: !include_dir_merge_named minimalist-templates/
+```
 
-    <div class="toolbar">
+Remember to save the file from time to time!
 
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+Open the search of the editor and search for the string “template:”. You should find quite a few of them. Now work your way through every “template:” entry you have in that file.
 
-    </div>
+Let’s see an example, this (or similar) is, what it should look like in your (unchanged) file:
 
-    </div>
-
-    Remember to save the file from time to time!
-
-    Open the search of the editor and search for the string “template:”. You should find quite a few of them. Now work your way through every “template:” entry you have in that file.
-
-    Let’s see an example, this (or similar) is, what it should look like in your (unchanged) file:
-
-    <div class="code-toolbar">
-
+```yaml
         cards:
           - type: horizontal-stack
             cards:
               - type: custom:button-card
                 template: chip_return
+```
 
-    <div class="toolbar">
+Now take a look in the list for your “old” name. You’ll find this:
 
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
+<div class="table-wrapper">
 
-    </div>
+<table>
 
-    </div>
+<tbody>
 
-    Now take a look in the list for your “old” name. You’ll find this:
+<tr>
 
-    <div class="table-wrapper">
+<th>Old name</th>
 
-    <table>
+<th>New name</th>
 
-    <tbody>
+<th>Variables / entries</th>
 
-    <tr>
+<th>Note</th>
 
-    <th>Old name</th>
+</tr>
 
-    <th>New name</th>
+<tr>
 
-    <th>Variables / entries</th>
+<td>chip_return</td>
 
-    <th>Note</th>
+<td>chip_back</td>
 
-    </tr>
+<td>ulm_chip_back_path</td>
 
-    <tr>
+<td></td>
 
-    <td>chip_return</td>
+</tr>
 
-    <td>chip_back</td>
+</tbody>
 
-    <td>ulm_chip_back_path</td>
+</table>
 
-    <td></td>
+</div>
 
-    </tr>
+This means, that we forward the old name (`chip_return`) to the new name (`chip_back`).
 
-    </tbody>
+Now change the old name to the new name, like so:
 
-    </table>
-
-    </div>
-
-    This means, that we forward the old name (`chip_return`) to the new name (`chip_back`).
-
-    Now change the old name to the new name, like so:
-
-    <div class="code-toolbar">
-
+```yaml
         cards:
           - type: horizontal-stack
             cards:
               - type: custom:button-card
                 template: chip_back
+```
 
-    <div class="toolbar">
+Wait, we’re not done yet! Look at the list entry again, and see, if there are variables or entries to set with the new naming. If so, set them under the template entry. This should give you something like this:
 
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-    </div>
-
-    </div>
-
-    Wait, we’re not done yet! Look at the list entry again, and see, if there are variables or entries to set with the new naming. If so, set them under the template entry. This should give you something like this:
-
-    <div class="code-toolbar">
-
+```yaml
         cards:
           - type: horizontal-stack
             cards:
@@ -427,15 +305,8 @@ Let’s see if we can get this done, so let’s start!
                 template: chip_back
                 variables:
                   ulm_chip_back_path: /ui-lovelace-minimalist/home
+```
 
-    <div class="toolbar">
+And now we’re done! Save the file and reload it via the three-dot-menu in Lovelace. You should now see - no differences! Than everything worked fine and you’re from now on good to go with updates, custom-cards, patches and so on.
 
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-    </div>
-
-    </div>
-
-    And now we’re done! Save the file and reload it via the three-dot-menu in Lovelace. You should now see - no differences! Than everything worked fine and you’re from now on good to go with updates, custom-cards, patches and so on.
-
-    Congratulations, you have done it, and we know from own experience, this isn’t an easy task!
+Congratulations, you have done it, and we know from own experience, this isn’t an easy task!

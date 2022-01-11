@@ -13,8 +13,7 @@ This “theme” is designed with an open structure in mind, that’s why it is 
 
 *   Copy the folder of the `custom-card` you want to use and paste it in the folder `minimalist-templates`. This should give you this structure:
 
-    <div class="code-toolbar">
-
+```yaml
         └── minimalist-templates/
            └── button_card_templates.yaml
            └── EN.yaml
@@ -23,14 +22,7 @@ This “theme” is designed with an open structure in mind, that’s why it is 
               └── readme.md
               └── languages/
                  └── EN.yaml
-
-    <div class="toolbar">
-
-    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div>
-
-    </div>
-
-    </div>
+```
 
 *   Check, if the `custom-card` has specific requirements, like installed `lovelace-cards` or integrations from Home Assistant activated! The readme of the corresponding card explicitly notes, if there are any requirements.
 *   Check, if the folder `languages` is available in the `custom-cards` folder. This is only the case, if the `custom-card` needs specific language variables.  
